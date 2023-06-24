@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/User-RegisterForm/static/css/main.3028f5cb.css",
+    "main.js": "/User-RegisterForm/static/js/main.bda4a589.js",
+    "static/media/logo1.png.jpeg": "/User-RegisterForm/static/media/logo1.png.e2ff5b6f85f35bac6cea.jpeg",
+    "index.html": "/User-RegisterForm/index.html",
+    "main.3028f5cb.css.map": "/User-RegisterForm/static/css/main.3028f5cb.css.map",
+    "main.bda4a589.js.map": "/User-RegisterForm/static/js/main.bda4a589.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3028f5cb.css",
+    "static/js/main.bda4a589.js"
+  ]
+}
