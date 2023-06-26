@@ -1,18 +1,16 @@
 import React, { useState, useContext } from "react";
 import "./Form.css";
-import logo from "./Assets/logo1.png.jpeg";
+// import logo from "./Assets/logo1.png.jpeg";
 import { useNavigate } from "react-router-dom";
+import { UserContext } from "./Context";
+import SignIn from "./SignIn";
 
 const Form = () => {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
   const [record, setRecord] = useState([]);
-  const [user, setUser] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-  });
+
+  const { user, setUser, favourites, setFavourites } = useContext(UserContext);
 
   const formSubmit = (e) => {
     e.preventDefault();
@@ -75,14 +73,20 @@ const Form = () => {
     navigate("/edit");
   };
 
-  const addFavourites = () => {
+  const showFavourites = () => {
     navigate("/favourites");
   };
+let {firstName,phone}=user;
+  const addFavourites = () => {
+    setFavourites();
+  };
+
   return (
     <div className="container">
       <main>
         <div className="left-section">
-          <img id="applogo" src={logo} alt="" />
+          <SignIn />
+          {/* <img id="applogo" src={logo} alt="" />
           <div className="login-form">
             <div>
               {" "}
@@ -102,7 +106,7 @@ const Form = () => {
                 Forgot Password?
               </a>
             </span>
-          </div>
+          </div> */}
         </div>
 
         <div className="right-section">
@@ -163,7 +167,8 @@ const Form = () => {
                   <p>{curElem.phone}</p>
                   <p>{curElem.email}</p>
                   <button onClick={formEdit}>EDIT</button>
-                  <button onClick={addFavourites}>FAVOURITE</button>
+                  <button onClick={addFavourites}>ADD TO FAVOURITE</button>
+                  <button onClick={showFavourites}>FAVOURITES</button>
                 </div>
               );
             })}

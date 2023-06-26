@@ -1,0 +1,102 @@
+html,body,#root{
+    height: 100%;
+    font-family: ui-serif;
+  }
+  
+  *{
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+  .container{
+      height: 100%;
+      display: grid;
+  }
+  
+  main{
+    /* margin: auto; */
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr  1.5fr;
+    /* max-width: 980px;
+    margin-top: 80px;  */
+  }
+  
+
+  .right-section{
+    background: linear-gradient(45deg, #d4afe0, #98adda, #ffd1ff);
+    background-color: #b378c0;
+    place-items: center;
+    /* padding: 10px; */
+    display: grid;
+    align-content: center;
+    height:700px;
+  }
+  
+
+  
+  .signUp-form{
+    width: 100%;
+    max-width: 500px;
+    display: grid;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  
+  .signUp-form input{
+    padding: 10px;
+    border-radius: 8px;
+    border: solid #000000 0.1px;
+  }
+  
+  
+  .signUp-form button{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #000000;
+    margin-left: 45%;
+    width: 80px;
+    color: white;
+    border-radius: 8px;  
+    border: solid #123235 0.1px;
+  }
+  
+  p,#white-heading{
+    color: black;
+    text-align: center;
+  }
+
+
+  
+  
+  h1{
+    text-align: center;
+    font-family: ui-serif;
+  } 
+  
+  .page-division{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    text-align: justify;
+  
+  }
+  .name-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  h2{
+    text-align: left;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: ui-serif;
+  }
+  
+
+
+  .error, h3{
+    color: red;
+    transition: 0.3s;
+  }
+  
+

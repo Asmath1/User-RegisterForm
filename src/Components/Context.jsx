@@ -1,8 +1,10 @@
-// import React, { createContext, useState } from "react";
-// import Edit from "./Edit";
-// import Form from "./Form";
+import React, { createContext, useState } from "react";
+import Edit from "./Edit";
+import Form from "./Form";
 
-// export const userContext = createContext();
+export const UserContext = createContext();
+
+
 
 // function Context() {
 //     const [user, setUser] = useState({
@@ -21,4 +23,4 @@
 //   );
 // }
 
-// export default Context;
+
