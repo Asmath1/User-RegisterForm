@@ -66,8 +66,8 @@ function Edit() {
   };
 
   return (
-    <div>
-      <div className="right-section">
+    <div className="container">
+      <div className="right-container">
         <div className="signUp-form">
           <h2> UPDATE REGISTER FORM</h2>
           <div className="name-section">

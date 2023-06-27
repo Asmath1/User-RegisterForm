@@ -22,15 +22,18 @@ html,body,#root{
     margin-top: 80px;  */
   }
   
-
-  .right-section{
+.container{
+  background: linear-gradient(45deg, #d4afe0, #98adda, #ffd1ff);
+    background-color: #b378c0;
+}
+  .right-container{
     background: linear-gradient(45deg, #d4afe0, #98adda, #ffd1ff);
     background-color: #b378c0;
     place-items: center;
     /* padding: 10px; */
     display: grid;
     align-content: center;
-    height:700px;
+    /* height:705px; */
   }
   
 

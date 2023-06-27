@@ -13,7 +13,7 @@ function App() {
     email: "",
     phone: "",
   });
-  const [favourites, setFavourites] = ([]);
+  const [favourites, setFavourites] = useState([]);
   return (
     <>
       <div className="App">

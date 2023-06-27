@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import "./Form.css";
+import "./Home.css";
 // import logo from "./Assets/logo1.png.jpeg";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "./Context";
@@ -76,9 +76,12 @@ const Form = () => {
   const showFavourites = () => {
     navigate("/favourites");
   };
-let {firstName,phone}=user;
+//let {firstName,phone}=user;
   const addFavourites = () => {
-    setFavourites();
+    console.log(user);
+    let newArray = favourites;
+    newArray.push(user);
+    setFavourites(newArray);
   };
 
   return (
