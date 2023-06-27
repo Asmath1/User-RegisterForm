@@ -1,110 +1,89 @@
-/* html,body,#root{
-    height: 100%;
-    font-family: ui-serif;
-  }
-  
-  *{
-    margin: 0;
-    box-sizing: border-box;
-    
-  }
-  .container{
-      height: 100%;
-      display: grid;
-  }
-   */
 
+#applogo {
+  width: 40%;
+  margin-bottom: 17px;
+  mix-blend-mode: multiply;
 
-  #applogo{
-    width: 40%;
-    /* height: 10%; */
-    /* padding-bottom: 20px; */
-    margin-bottom: 17px;
-    /* background-image: url("./Assets/logo1.png.jpeg"); */
-    mix-blend-mode:multiply ;
-
-  }
-  #heading{
-    margin: auto;
-
-  }
-
-  .login-form {
-    width: 100%;
-    max-width: 400px;
-    display: grid;
-    /* text-align: center; */
-    gap: 15px;
 }
 
-  
-  .login-form input{
-    
-    padding: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
-    border-radius: 8px;
-    border: solid black 0.1px;
-  }
-  
+#heading {
+  margin: auto;
 
-  .login-form button{
-    padding: 10px;
-    cursor: pointer;
-    background-color: #000000;
-    width: 80px;
-    margin-left: 35%;
-    color: white;  
-    border-radius: 8px;
-    border: solid #154144 0.1px;
-  }
-  
-  
-  
-  p,#white-heading{
-    color: black;
-    text-align: center;
-  }
-
-  .App-logo {
-    height: 60px;
-    /* display: grid; */
-    grid-template-columns: 1fr 1px 1fr;
-    animation: none;
-    align-items: end;
-    justify-items: center;
-    margin-bottom: 20px;
 }
-  
-  
-  h1{
-    text-align: center;
-    font-family: ui-serif;
-  } 
-  
-  .page-division{
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    text-align: justify;
-  
-  }
-  .name-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-  h2{
-    text-align: left;
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-    font-family: ui-serif;
-  }
-  
-  .forgot-password{
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-  }
 
-  
+.login-form {
+  width: 100%;
+  /* max-width: 400px; */
+  display: grid;
+  gap: 15px;
+  /* padding: 0px 40px; */
+}
 
-  
+
+.login-form input {
+
+  padding: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-radius: 8px;
+  border: solid black 0.1px;
+}
+
+
+.login-form button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #000000;
+  width: 80px;
+  margin-left: 40%;
+  color: white;
+  border-radius: 8px;
+  border: solid #154144 0.1px;
+}
+
+
+
+p,
+#white-heading {
+  color: black;
+  text-align: center;
+}
+
+.App-logo {
+  height: 60px;
+  grid-template-columns: 1fr 1px 1fr;
+  animation: none;
+  align-items: end;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+
+h1 {
+  text-align: center;
+  font-family: ui-serif;
+}
+
+.page-division {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  text-align: justify;
+
+}
+
+.name-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+h2 {
+  text-align: left;
+  font-family: ui-serif;
+}
+
+.forgot-password {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}

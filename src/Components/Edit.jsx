@@ -4,7 +4,6 @@ import { UserContext } from "./Context";
 
 function Edit() {
   const { user, setUser } = useContext(UserContext);
-  console.log(user);
 
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);

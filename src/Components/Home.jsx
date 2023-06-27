@@ -1,9 +1,8 @@
 import React, { useState, useContext } from "react";
-import "./Home.css";
-// import logo from "./Assets/logo1.png.jpeg";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "./Context";
 import SignIn from "./SignIn";
+import "./Home.css";
 
 const Form = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -76,7 +75,7 @@ const Form = () => {
   const showFavourites = () => {
     navigate("/favourites");
   };
-//let {firstName,phone}=user;
+
   const addFavourites = () => {
     console.log(user);
     let newArray = favourites;
@@ -89,27 +88,6 @@ const Form = () => {
       <main>
         <div className="left-section">
           <SignIn />
-          {/* <img id="applogo" src={logo} alt="" />
-          <div className="login-form">
-            <div>
-              {" "}
-              <h1 id="heading">WELCOME!</h1>{" "}
-            </div>
-            <input type="text" placeholder="username" />
-            <input type="text" placeholder="password" />
-
-            <button>LOGIN</button>
-
-            <span className="forgot-password">
-              <a
-                href="no-javascript1.html"
-                title="Forgot Password"
-                id="link-reset"
-              >
-                Forgot Password?
-              </a>
-            </span>
-          </div> */}
         </div>
 
         <div className="right-section">

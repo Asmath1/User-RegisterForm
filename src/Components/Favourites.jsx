@@ -4,20 +4,19 @@ import { UserContext } from "./Context";
 
 function Favourites() {
   const { favourites, setFavourites } = useContext(UserContext);
-   console.log(favourites);
+  console.log(favourites);
 
   return (
     <div className="favourite">
       <div>
-      <h2>FAVOURITE CONTACT LIST </h2>
-      <table className="tabList" border={2}  >
-
-        <tr>
-          <th>First-Name</th>
-          <th>Last-Name</th>
-          <th>Phone</th>
-          <th>Email</th>
-        </tr>
+        <h2>FAVOURITE CONTACT LIST </h2>
+        <table className="tabList" border={2}>
+          <tr className="heading">
+            <th>FIRST NAME</th>
+            <th>LAST NAME</th>
+            <th>PHONE</th>
+            <th>EMAIL</th>
+          </tr>
           {favourites.map((curElem) => {
             return (
               <tr>
@@ -25,12 +24,10 @@ function Favourites() {
                 <td>{curElem.lastName}</td>
                 <td>{curElem.phone}</td>
                 <td>{curElem.email}</td>
-                
               </tr>
             );
           })}
-        
-      </table>
+        </table>
       </div>
     </div>
   );

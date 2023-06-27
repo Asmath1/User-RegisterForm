@@ -1,18 +1,25 @@
-td,th{
+td,
+th {
     text-align: center;
 }
-.favourite{
+
+.heading {
+    background-color: #cc96d8;
+}
+
+.favourite {
     background: linear-gradient(45deg, #d4afe0, #98adda, #ffd1ff);
     background-color: #b378c0;
     place-items: center;
-    /* padding: 10px; */
     align-content: center;
     height: 100%;
 }
-.tabList{
+
+.tabList {
     width: 100%;
 }
-h2{
+
+h2 {
     padding: 20px;
     text-align: center;
 }
